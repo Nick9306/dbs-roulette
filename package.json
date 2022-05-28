@@ -1,0 +1,30 @@
+{
+  "name": "dbs-roulette",
+  "version": "1.0.0",
+  "description": "Modified Version of Simply Roulette.",
+  "main": "index.js",
+  "dependencies": {
+    "better-sqlite3": "^7.1.5",
+    "nanoid": "^3.1.22",
+    "node-cron": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nick9306/dbs-roulette.git"
+  },
+  "keywords": [
+    "casino",
+    "roulette",
+    "betting"
+  ],
+  "author": "Nick9306",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nick9306/dbs-roulette/issues"
+  },
+  "homepage": "https://github.com/Nick9306/dbs-roulette#readme"
+}
