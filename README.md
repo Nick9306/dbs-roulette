@@ -1,5 +1,5 @@
 # DBS Roulette
-Modified Version of Simply Roulette.
+Modified Version of Simply Roulette for use with Discord.
 
 ## Example Usage
 
@@ -18,8 +18,8 @@ Table.addBet('two', '12', 56);
 Table.startGame();
 
 // Event handler for every time the wheel spins automatically.
-Table.on('spin', (results) => {
-  console.log('Wheel Results:', results);
+Table.on('spin', (winner) => {
+  console.log('Wheel Results:', winner);
 });
 ```
 
@@ -64,16 +64,16 @@ const Table = new Roulette();
 
 // Manually Spin
 Table.spin()
-  .then(results => {
-    console.log('RESULTS', results);
+  .then(winner => {
+    console.log('RESULTS', winner);
   });
 
 // Start an Auto-Spin (Spin's every minute)
 Table.startGame();
 
 // Handling Auto Spins
-Table.on('spin', (results) => {
-  console.log('RESULTS', results);
+Table.on('spin', (winner) => {
+  console.log('RESULTS', winner);
 });
 
 // Stop the Auto-Spin
