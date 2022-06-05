@@ -1,6 +1,6 @@
 {
   "name": "dbs-roulette",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Modified Version of Simply Roulette.",
   "main": "index.js",
   "dependencies": {

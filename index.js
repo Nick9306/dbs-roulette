@@ -69,7 +69,7 @@ class SimplyRoulette extends EventEmitter {
     // Start the auto game
     if (this.logging) console.log(`+++ Starting Auto-Game (${this.id}) +++`);
     if (wheels[this.id]) return;
-    wheels[this.id] = cron.schedule('* */1 * * * *', async () => await this.spin(), null);
+    wheels[this.id] = cron.schedule('* */1 * * * *', async () => this.spin(), null);
   }
 
   stopGame() {
@@ -107,7 +107,7 @@ class SimplyRoulette extends EventEmitter {
       ) {
         const odds = betOdds(player, bet, spot);
         const prize = parseInt(amount) * (odds ? parseInt(odds.split(':')[0]) : 1);
-        this.winners.push({ player, bet: `Bet ${amount} on (${bet})`, prize });
+        this.winners.push({ player, bet: `Bet **${amount}** on **${bet}**`, prize: `**${prize}**` });
       }
     }
     this.bets = [];
